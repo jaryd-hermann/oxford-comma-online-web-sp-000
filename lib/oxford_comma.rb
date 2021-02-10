@@ -7,7 +7,7 @@ def oxford_comma(array)
         # put a comma after each, but add "and" before the last word
         array.each.collect do |value|
             if value == array[-1]
-                arr[-1] = "and " << value
+                array[-1] = "and " << value
             end
         end
         array.join(", ")
